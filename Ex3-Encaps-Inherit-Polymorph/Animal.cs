@@ -22,10 +22,6 @@ namespace Ex3_Encaps_Inherit_Polymorph
         {
             return $"{Name}, {Age}, {Weight}";
         }
-
-    
-
-    
     }
 
     class Horse : Animal
@@ -57,29 +53,22 @@ namespace Ex3_Encaps_Inherit_Polymorph
             HasPattern = hasPattern;
         }
 
-      
-
         public override string DoSound()
         {
             return "Woff";
         }
-
-
 
         public override string Stats()
         {
             return $"{Name}, {Age}, {Weight}";
         }
 
-        public virtual string StringMethod() 
+        public string DogString() 
         {
 
            return "Hunden är människans bästa vän"; 
       
         }
-
-
-
     }
     class HedgeHog : Animal
     {
