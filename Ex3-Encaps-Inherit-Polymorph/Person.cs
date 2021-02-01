@@ -52,7 +52,7 @@ namespace Ex3_Encaps_Inherit_Polymorph
             }
         set
            {
-                if (value.Length < 2 || value.Length > 10 || value == null)
+                if (value.Length < 2 || value.Length > 10)
                 {
                     throw new ArgumentException("Förnamnet måste vara minst 2 ord och max 10 ord");
                 }

@@ -17,7 +17,7 @@ namespace Ex3_Encaps_Inherit_Polymorph
                 person.SetAge(p, 35);
                 person.GetFullName(p, "Susanna", "Sjöberg");
                 person.GetWightAndHeight(p, 160.3, 50.5);
-
+                Console.WriteLine("Prints person: ");
                 Console.WriteLine($"{p.Fname} {p.Lname} is {p.Age} years old, and are {p.Height} cm tall and weight {p.Weight} kg");
 
             }
@@ -51,6 +51,9 @@ namespace Ex3_Encaps_Inherit_Polymorph
 
             };
 
+            Console.WriteLine(" ");
+            Console.WriteLine("Prints animals: ");
+            
             foreach (var animal in animals)
             {
 
@@ -81,10 +84,12 @@ namespace Ex3_Encaps_Inherit_Polymorph
 
                 //new Horse("Fast", "Blixten", 3, 5, false) //Se F9 i uppgift 3.3 
             };
+
+            Console.WriteLine(" ");
             Console.WriteLine("Prints dogs");
+            
             foreach (var item in dogs)
-            {
-                
+            {  
                 Console.WriteLine(item.Stats());
                 Console.WriteLine(item.DogString()); 
             }
@@ -99,6 +104,9 @@ namespace Ex3_Encaps_Inherit_Polymorph
                 new NumericInputError(),
                 new TextInputError(),
             };
+
+            Console.WriteLine(" ");
+            Console.WriteLine("Prints errors");
 
             foreach (var error in useErrors)
             {

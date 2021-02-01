@@ -40,7 +40,7 @@ namespace Ex3_Encaps_Inherit_Polymorph
 
         public override string Stats()
         {
-            return $"{Name}, {Age}, {Weight}";
+            return $"{Name} is {Age} years old and weight {Weight} kg";
         }
 
     }
@@ -60,7 +60,7 @@ namespace Ex3_Encaps_Inherit_Polymorph
 
         public override string Stats()
         {
-            return $"{Name}, {Age}, {Weight}";
+            return $"{Name} is {Age} years old and weight {Weight} kg";
         }
 
         public string DogString() 
@@ -84,7 +84,7 @@ namespace Ex3_Encaps_Inherit_Polymorph
 
         public override string Stats()
         {
-            return $"{Name}, {Age}, {Weight}";
+            return $"{Name} is {Age} years old and weight {Weight} kg";
         }
     }
     class Worm : Animal
@@ -100,7 +100,7 @@ namespace Ex3_Encaps_Inherit_Polymorph
         }
         public override string Stats()
         {
-            return $"{Name}, {Age}, {Weight}";
+            return $"{Name} is {Age} years old and weight {Weight} kg";
         }
     }
 
@@ -118,8 +118,7 @@ namespace Ex3_Encaps_Inherit_Polymorph
         }
         public override string Stats()
         {
-            return $"{Name}, {Age}, {Weight}";
-        }
+return $"{Name} is {Age} years old and weight {Weight} kg";        }
     }
     class Bird : Animal
     {
