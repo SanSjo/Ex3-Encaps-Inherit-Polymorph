@@ -35,19 +35,19 @@ namespace Ex3_Encaps_Inherit_Polymorph
             //F10. Det måste vara en Animal type för att alla klasser ska kunna lgrad tillsammans
             
 
-            Horse horse = new Horse("Very fast", "Thunder", 5, 70);
-            Dog dog = new Dog(hasPattern: true, "Fido", 6, 10);
+            Horse horse = new Horse("Very fast", "Thunder", age: 5, weight: 70);
+            Dog dog = new Dog(hasPattern: true, "Fido", age: 6, weight: 10);
             
             var animals = new List<Animal>
             {
                 horse,
                 dog,
-                new Worm("black", "Wormy", 1, 2),
-                new Wolfman(isHungry: true, "Henry", 100, 200),
+                new Worm("black", "Wormy", age: 1, weight: 2),
+                new Wolfman(isHungry: true, "Henry", age: 100, weight: 200),
                 new Bird("koko", "Gök", 3, 4),
-                new Pelican(12, "kakaka", "Peli", 3, 5),
-                new Swan("Black", "chaaa", "Black swan", 5, 8),
-                new Dog(hasPattern: true, "Rufs", 13, 20),
+                new Pelican(12, "kakaka", "Peli", age: 3, weight: 5),
+                new Swan("Black", "chaaa", "Black swan", age: 5, weight: 8),
+                new Dog(hasPattern: true, "Rufs", age: 13, weight: 20),
 
             };
 
@@ -78,9 +78,9 @@ namespace Ex3_Encaps_Inherit_Polymorph
             //F17: Nej jag kommer inte åt Dog metoden i Animals för att animals ärver inte från Dogs. Metoder i Dog klassen är bara tillgänlig för Dog. Dem andra klasserna kommer inte åt den. För att Animal ska få tillgång till Dog metoden har jag castat animal as Dog i animal foreach-loopen, och då får animal tillgång till Dog-metoden. Men vet inte om det är rätt. 
             List<Dog> dogs = new List<Dog>()
             {
-                new Dog(hasPattern: true, "Sally", 100, 4),
-                new Dog(hasPattern: false, "Truls", 3, 10),
-                new Dog(hasPattern: true, "Rufus", 15, 10),
+                new Dog(hasPattern: true, "Sally", age: 100, weight: 4),
+                new Dog(hasPattern: false, "Truls",age: 3, weight: 10),
+                new Dog(hasPattern: true, "Rufus", age: 15, weight: 10),
 
                 //new Horse("Fast", "Blixten", 3, 5, false) //Se F9 i uppgift 3.3 
             };
