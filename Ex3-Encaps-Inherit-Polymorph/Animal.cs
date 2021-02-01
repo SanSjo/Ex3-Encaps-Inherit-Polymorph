@@ -40,7 +40,7 @@ namespace Ex3_Encaps_Inherit_Polymorph
 
         public override string Stats()
         {
-            return $"{Name} is {Age} years old and weight {Weight} kg";
+            return $"{Name} is {Age} years old and weight {Weight} kg. This horse is {IsFast}";
         }
 
     }
@@ -60,7 +60,7 @@ namespace Ex3_Encaps_Inherit_Polymorph
 
         public override string Stats()
         {
-            return $"{Name} is {Age} years old and weight {Weight} kg";
+            return $"{Name} is {Age} years old and weight {Weight} kg. The dog has patterns: {HasPattern}. ";
         }
 
         public string DogString() 
@@ -84,7 +84,7 @@ namespace Ex3_Encaps_Inherit_Polymorph
 
         public override string Stats()
         {
-            return $"{Name} is {Age} years old and weight {Weight} kg";
+            return $"{Name} is {Age} years old and have {NoOfSpikes} spikes and weight {Weight} kg";
         }
     }
     class Worm : Animal
@@ -100,7 +100,7 @@ namespace Ex3_Encaps_Inherit_Polymorph
         }
         public override string Stats()
         {
-            return $"{Name} is {Age} years old and weight {Weight} kg";
+            return $"{Name} have the color {Color} and is {Age} years old. The worms weight is {Weight} kg";
         }
     }
 
@@ -118,7 +118,7 @@ namespace Ex3_Encaps_Inherit_Polymorph
         }
         public override string Stats()
         {
-return $"{Name} is {Age} years old and weight {Weight} kg";        }
+            return $"{Name} is {Age} years old and weight {Weight} kg. Is the wolf hungry: {IsHungry}";        }
     }
     class Bird : Animal
     {
@@ -133,7 +133,7 @@ return $"{Name} is {Age} years old and weight {Weight} kg";        }
         }
         public override string Stats()
         {
-            return $"{Name}, {Age}, {Weight}";
+            return $"{Name} is {Age} years old and weight {Weight} kg, making {Sound} sounds";
         }
     }
     class Pelican : Bird
@@ -145,7 +145,7 @@ return $"{Name} is {Age} years old and weight {Weight} kg";        }
         }
         public override string Stats()
         {
-            return $"{Name}, {Age}, {Weight}";
+            return $"{Name} is {Age} years old, have {BeakSize} cm beak size and weight {Weight} kg";
         }
 
     }
@@ -159,7 +159,7 @@ return $"{Name} is {Age} years old and weight {Weight} kg";        }
         }
         public override string Stats()
         {
-            return $"{Name}, {Age}, {Weight}";
+            return $"{Name} is {Age} years old have {LegHeight} cm long legs and weight {Weight} kg.";
         }
     }
 
@@ -173,7 +173,7 @@ return $"{Name} is {Age} years old and weight {Weight} kg";        }
         }
         public override string Stats()
         {
-            return $"{Name}, {Age}, {Weight}";
+            return $"{Name} is {Age} years old have a {Color} color and weight {Weight} kg.";
         }
     }
 
@@ -191,7 +191,7 @@ return $"{Name} is {Age} years old and weight {Weight} kg";        }
         }
         public override string Stats()
         {
-            return $"{Name}, {Age}, {Weight}";
+            return $"{Name} is {Age} years old and weight {Weight} kg. Is Hungry? {IsHungry} ";
         }
     }
 
