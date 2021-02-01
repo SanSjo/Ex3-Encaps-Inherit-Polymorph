@@ -36,18 +36,18 @@ namespace Ex3_Encaps_Inherit_Polymorph
             
 
             Horse horse = new Horse("Very fast", "Thunder", 5, 70);
-            Dog dog = new Dog(true, "Fido", 6, 10);
+            Dog dog = new Dog(hasPattern: true, "Fido", 6, 10);
             
             var animals = new List<Animal>
             {
                 horse,
                 dog,
                 new Worm("black", "Wormy", 1, 2),
-                new Wolfman(true, "Henry", 100, 200),
+                new Wolfman(isHungry: true, "Henry", 100, 200),
                 new Bird("koko", "Gök", 3, 4),
                 new Pelican(12, "kakaka", "Peli", 3, 5),
                 new Swan("Black", "chaaa", "Black swan", 5, 8),
-                new Dog(true, "Rufs", 13, 20),
+                new Dog(hasPattern: true, "Rufs", 13, 20),
 
             };
 
@@ -78,9 +78,9 @@ namespace Ex3_Encaps_Inherit_Polymorph
             //F17: Nej jag kommer inte åt Dog metoden i Animals för att animals ärver inte från Dogs. Metoder i Dog klassen är bara tillgänlig för Dog. Dem andra klasserna kommer inte åt den. För att Animal ska få tillgång till Dog metoden har jag castat animal as Dog i animal foreach-loopen, och då får animal tillgång till Dog-metoden. Men vet inte om det är rätt. 
             List<Dog> dogs = new List<Dog>()
             {
-                new Dog(true, "Sally", 100, 4),
-                new Dog(false, "Truls", 3, 10),
-                new Dog(true, "Rufus", 15, 10),
+                new Dog(hasPattern: true, "Sally", 100, 4),
+                new Dog(hasPattern: false, "Truls", 3, 10),
+                new Dog(hasPattern: true, "Rufus", 15, 10),
 
                 //new Horse("Fast", "Blixten", 3, 5, false) //Se F9 i uppgift 3.3 
             };
